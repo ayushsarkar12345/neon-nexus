@@ -6,4 +6,10 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+export default defineConfig({
+  vite: {
+    // This tells GitHub Pages that your site is hosted at /neon-nexus/
+    // instead of the root domain.
+    base: "/neon-nexus/",
+  },
+});
